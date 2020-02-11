@@ -33,7 +33,8 @@ public class GIsHappyTest {
     @Test
     public void gIsHappyTest3(){
         Boolean actual = stringsAndThings.gIsHappy("xxggyygxx");
-        Assert.assertTrue(actual);
+        Assert.assertFalse(actual);
+        //This was wrongly assigned assertTrue when it is false because the last g has no g to the immediate right or immediate left
     }
 
 }
