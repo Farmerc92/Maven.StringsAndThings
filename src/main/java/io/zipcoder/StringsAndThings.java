@@ -54,12 +54,7 @@ public class StringsAndThings {
         isCount /= 2;
         int notCount = input.length() - input.replaceAll("not","").length();
         notCount /= 3;
-        if (isCount == notCount){
-            return true;
-        }
-        else {
-            return false;
-        }
+        return isCount == notCount;
     }
 
     /**
